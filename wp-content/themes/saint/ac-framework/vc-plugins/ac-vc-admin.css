@@ -1,0 +1,472 @@
+/***********************************/
+/**** Alleycat VC admin styles  ****/ 
+/***********************************/
+
+/*
+
+Contents
+========
+
+1.  General
+2.  Backend editor
+3.  Editor modal
+4.  Hide VC elements
+*/
+
+/* 1.  General 
+========================================================== */
+a:active {
+	outline: none;
+}
+
+/* 2.  Backend editor
+========================================================== */
+
+.vc_btn-primary {
+	color: #ffffff;
+	background-color: #2ea2cc;
+	border-color: #0074a2;
+}
+
+.vc_navbar.vc_subnav-fixed {
+	z-index: 98;
+	background-color: #222;
+}
+
+.vc_navbar.vc_subnav-fixed .vc_navbar-border-right,
+.vc_navbar.vc_subnav-fixed .vc_navbar-nav > li {
+	border-color: #333;
+	transition:	 none;
+}
+
+.vc_navbar.vc_subnav-fixed .vc_icon-btn:hover {
+	background-color: #333;
+}
+
+
+/* Restyle VC buttons */
+
+.composer-switch {
+	margin: 25px 0 0 0;
+}
+
+.composer-switch a.wpb_switch-to-composer, 
+.composer-switch a:visited.wpb_switch-to-composer {
+	border-radius: 4px;
+	padding: 4px 12px;
+}
+
+.vc_controls > .vc_controls-cc,
+.composer-switch a.wpb_switch-to-composer, 
+.composer-switch a:visited.wpb_switch-to-composer {
+	background: #444;
+}
+
+.vc_controls > .vc_controls-cc:hover,
+.vc_control-btn .vc_btn-content:hover,
+.composer-switch a.wpb_switch-to-composer:hover, 
+.composer-switch a:visited.wpb_switch-to-composer:hover {
+	background-color: #333;
+}
+
+
+/* --- Modal container styling --- */
+
+/* BG Fade */
+
+.vc_modal {
+	background: rgba(0,0,0,.25) !important;
+}
+
+/* Modal Search box */
+
+#vc_elements_name_filter {
+	background-color: #333;
+	border-color: #424242;
+	border-radius: 4px;
+	padding: 6px 12px 6px 30px;
+	line-height: 140%;
+	color: #fff;
+	margin: 0 5px 10px 5px;
+}
+
+.vc_modal .vc_modal-dialog .vc_modal-content {
+	background-color: #222;
+	border-color: #111;
+}
+
+/* VC modal header */
+.vc_modal-header {
+	background: #151515;
+	padding: 15px;
+}
+
+ul.isotope-filter {
+	margin: 10px 0 20px 0 !important;
+}
+
+.wpb-content-layouts-container .isotope-filter li.active a {
+	color: #fff !important;
+}
+
+.wpb-elements-list-modal .wpb-content-layouts a {
+	padding: 0 15px 0 60px;
+}
+
+
+/* Style VC Components */
+
+.wpb-content-layouts li {
+ 	min-width: 205px;
+	height: 65px;
+}
+
+.wpb-elements-list-modal .wpb-content-layouts li {
+	background: #333;
+	border: none;
+	border-radius: 4px;
+	margin: 0 0 4px 4px;
+}
+
+.wpb-elements-list-modal .wpb-content-layouts li:hover {
+	background: #282828;
+	transition: .2s ease-in-out	 ;
+}
+
+.wpb-elements-list-modal .wpb-content-layouts a .vc_element-description {
+	color: #d9d9d9;
+}
+
+.wpb-content-layouts i.vc_element-icon {
+	top: 20px;
+	left: 14px;
+}
+
+
+/* Style fixes */
+
+.wpb_vc_tour .ui-tabs .ui-tabs-panel {
+	background: #fff !important;
+	border: 1px solid #dfdfdf !important;
+}
+
+.wpb_content_element .wpb_tabs_holder > .wpb_vc_tab{
+	background: #fff !important;
+	border: 1px solid #dfdfdf !important;
+}
+
+.wpb_vc_tour > .wpb_element_wrapper .ui-tabs .ui-tabs-nav {
+	left: 1px;
+	z-index: 2;
+	padding: 0;
+}
+
+.wpb_content_element h4.wpb_element_title {
+	margin-top: 8px !important;
+}
+
+
+/* VC Controls 
+-------------------------------------------- */
+
+/* UI Preview */
+.wpb_content_element > .wpb_element_wrapper {
+	height: auto;
+}
+
+.wpb_vc_param_value h1 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.wpb_content_element:hover > div.controls {
+	opacity: 1;
+	text-align: center;
+	width: 100%;
+	left: 0;
+}
+
+/* Content Thumbnails */
+/* Override icons */
+
+.vc_modal #ac_image i {
+	background-position: 0 -672px;
+}
+.vc_modal #ac_text_block i {
+	background-position: 0 -256px;
+}
+.vc_modal #ac_block_slider i {
+	background-position: 0 -1152px;
+}
+.vc_modal #ac_featured_post i {
+	background-position: 0 -1184px;
+}
+.vc_modal #ac_posts i {
+	background-position: 0 -352px;
+}
+.vc_modal #ac_portfolio i {
+	background-position: 0 -1313px;
+}
+.vc_modal #ac_testimonial i {
+	background-position: 0 -1281px;
+}
+.vc_modal #ac_person i {
+	background-position: 0 -1249px;
+}
+.vc_modal #ac_vc_button i {
+	background-position: 0 -448px;
+}
+.vc_modal #ac_galleries i {
+	background-position: 0 -32px;
+}
+.vc_modal #ac_gallery i {
+	background-position: 0 -1088px;
+}
+.vc_modal #ac_product i {
+	background-position: 0 -1347px;
+}
+.vc_modal #ac_block_quote i {
+	background-position: 0 -1216px;
+}
+
+.vc_modal #vc_empty_space i {
+	background-position: 0 -512px;
+}
+
+
+.vc_modal .vc_element-icon {
+	background-image: url(../ac-page-builder/images/elements_icons/sprite.png);
+	background-size: 100%;
+	}
+.wpb_vc_facebook .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/facebook.png);
+	}
+.wpb_vc_pinterest .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/pinterest.png);
+	}
+.wpb_vc_tweetmeme .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/tweetmeme.png);
+	}
+.wpb_vc_googleplus .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/google_plus.png);
+	}
+.wpb_vc_wp_widget .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/wordpress.png);
+	}
+.wpb_vc_gallery .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/gallery.png);
+	}
+.wpb_vc_images_carousel .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/image_carousele.png);
+	}
+.wpb_vc_carousel .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/carousel.png);
+	}
+.wpb_vc_posts_slider .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/slideshow.png);
+	}
+.wpb_vc_teaser_grid .wpb_element_wrapper, .wpb_vc_posts_grid .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/teaser_grid.png);
+	}
+.wpb_vc_widget_sidebar .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/layout_sidebar.png);
+	}
+.wpb_vc_cta_button .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/cta_align_right.png);
+	}
+.wpb_vc_video .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/video.png);
+	}
+.wpb_vc_gmaps .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/map.png);
+	}
+.wpb_vc_raw_html .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/html.png);
+	}
+.wpb_vc_raw_js .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/js.png);
+	}
+.wpb_vc_flickr .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/flickr.png);
+	}
+.wpb_vc_progress_bar .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/graph.png);
+	}
+.wpb_vc_pie .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/chart_pie.png);
+	}
+.vc_empty_space .wpb_element_wrapper {
+	background-image: url(../ac-page-builder/images/elements_icons/chart_pie.png);
+	}
+.wpb_custom_post_css i.icon {
+	background: transparent url(../ac-page-builder/images/post_css.png) center center no-repeat;
+	}
+.wpb_ac_dnd_portfolio .wpb_element_wrapper {
+	background-image:url(../ac-page-builder/images/elements_icons/ac_dragdrop.png);
+	}
+	
+
+
+.controls_row .column_delete, 
+.controls_row .column_clone, 
+.controls_row .column_edit,
+.wpb_vc_row > .controls .column_delete:hover {
+	background-color: #f5f5f5;
+}
+
+/* Hide row toggle */
+.controls_row .vc_row_edit_clone_delete .vc_control.column_toggle {
+	display: none;
+}
+
+
+/* Column Dropdown */
+
+.bottom-controls .column_add,
+.bottom-controls .column_edit,
+.bottom-controls .column_delete {
+	display: none;
+}
+
+.wpb_row_container > .wpb_vc_column > .vc_controls.bottom-controls {
+	height: 14px;
+}
+
+.controls_row .vc_row_layouts {
+	background: #fff;
+}
+
+.controls_row .vc_row_layouts:hover a:hover, 
+.controls_row .vc_row_layouts:hover a.vc_active {
+	background-color: #f1f1f1;
+}
+
+/* margin for background description - UA */
+.wpb_row_container > .wpb_vc_column {
+	margin-bottom: 5px;
+}
+#visual_composer_content > .wpb_vc_row {
+	margin-bottom: 20px;
+}
+
+
+/* 3.  Editor modal
+========================================================== */
+.wpb_edit_form_elements .vc_row-fluid input, 
+.wpb_edit_form_elements .vc_row-fluid select {
+	width: auto !important;
+}
+.wpb_edit_form_elements .vc_row-fluid input.title {
+	width: 80% !important;	
+}
+.wpb_edit_form_elements .vc_row-fluid input {
+	padding: 4px 6px;
+}
+.wpb-element-edit-modal .wpb_element_label {
+	float: left;
+	width: 25%;
+	line-height: inherit;
+	margin-top: 3px;
+}
+/* not AC styling on some elements */
+.wpb-element-edit-modal .wpb_el_type_css_editor .wpb_element_label {
+	float: none;
+	width: 100%;
+}
+.wpb_edit_form_elements .vc_row-fluid.wpb_el_type_css_editor input[type=text] {
+	width: 34px !important;
+}
+.wpb-element-edit-modal .edit_form_line {
+	float: left;
+	width: 70%;	
+}
+.wpb-element-edit-modal .wpb_el_type_css_editor .edit_form_line {
+	width: 100%;	
+}
+.wpb-element-edit-modal .wpb_element_label {
+	font-size: 14px;
+}
+.wpb_edit_form_elements span.description {
+	font-size: 12px;
+}
+.wpb-element-edit-modal .wpb-select.right {
+	/* always align left to avoid right aligned controls */
+	float: none !important;
+}
+
+
+/* 4.  Hide VC elements
+========================================================== */
+
+
+/* Hide VC Front end composer */
+
+.logo-icon,
+.vc_navbar-header,
+.composer-switch .vc_spacer {
+	display: none !important;
+}
+
+#wpb-edit-inline,
+.wpb_switch-to-front-composer,
+#wp-admin-bar-vc_inline-admin-bar-link {
+	display: none !important;
+}
+
+
+/* WP VC elements */
+
+[data-element="vc_wp_rss"],
+[data-element="vc_wp_meta"],
+[data-element="vc_wp_pages"],
+[data-element="vc_wp_text"],
+[data-element="vc_wp_posts"],
+[data-element="vc_wp_search"],
+[data-element="vc_wp_archives"],
+[data-element="vc_wp_calendar"],
+[data-element="vc_wp_tagcloud"],
+[data-element="vc_wp_custommenu"],
+[data-element="vc_wp_categories"],
+[data-element="vc_wp_recentcomments"] {
+	display: none !important;
+}
+
+
+/* AC VC elements */
+
+
+/* VC elements */
+
+[data-element="vc_gmaps"],
+[data-element="vc_button"],
+[data-element="vc_button2"],
+[data-element="vc_carousel"],
+[data-element="vc_posts_grid"],
+[data-element="vc_posts_slider"],
+[data-element="vc_custom_heading"] {
+	display: none !important;
+}
+
+
+/* UAO VC elements */
+
+[data-element="info_circle"],
+[data-element="ultimate_spacer"],
+[data-element="swatch_container"],
+[data-element="ultimate_heading"],
+[data-element="ultimate_pricing"],
+[data-element="interactive_banner"],
+[data-element="interactive_banner_2"] {
+	display: none !important;
+}
+
+/* UAO VC WooCommerce elements */
+
+[data-element="woocomposer_grid"],
+[data-element="woocomposer_list"],
+[data-element="woocomposer_product"],
+[data-element="woocomposer_grid_cat"],
+[data-element="woocomposer_carousel"],
+[data-element="woocomposer_carousel_cat"] {
+	display: none !important;
+}

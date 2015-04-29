@@ -1,0 +1,573 @@
+/********************************************/
+/**** Alleycat Drag and Drop Gallery CSS ****/
+/********************************************/
+
+/* WP */
+#wpcontent
+{
+	margin-left: 150px !important;
+	padding-left: 20px;
+}
+
+#footer {
+	clear: both;
+}
+
+/* common */
+.ac_dnd_gallery button,
+.ui-dialog button,
+.ui-dialog .ui-dialog-buttonpane button
+{
+	background-color: #333333;	
+	border: none;
+	border-radius: 3px;
+	padding: 8px 13px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+/* structure */
+.ac_dnd_gallery {
+	position: relative;
+}
+
+/* gallery manipulation */
+.new-gallery-top {
+	position: absolute;
+	top: 6px;
+	left: 243px;
+}
+
+/* gallery edit */
+.gallery-editors {
+	width: 50px;
+	float: left;
+	position: relative;
+	margin-top: 2px;
+}
+
+.gallery-editors.notHomeOrTrash .button-gallery-up {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 40px;
+	width: 40px;
+	background-image: url("images/gallery-button-up.png");	
+	cursor: pointer;	
+}
+
+.gallery-editors.notHomeOrTrash .button-gallery-up.enabled:hover {
+	background-image: url("images/gallery-button-up-hover.png");	
+}
+
+.gallery-editors.notHomeOrTrash .button-gallery-down {
+	position: absolute;
+	left: 0px;
+	top: 45px;
+	height: 40px;
+	width: 40px;
+	background-image: url("images/gallery-button-down.png");	
+	cursor: pointer;	
+}
+.gallery-editors.notHomeOrTrash .button-gallery-down.enabled:hover {
+	background-image: url("images/gallery-button-down-hover.png");	
+}
+
+.gallery-editors.notHomeOrTrash .button-gallery-trash {
+	position: absolute;
+	left: 0px;
+	top: 90px;
+	height: 40px;
+	width: 40px;
+	background-image: url("images/gallery-trash.png");	
+	cursor: pointer;	
+}
+.gallery-editors.notHomeOrTrash .button-gallery-trash:hover {
+	background-image: url("images/gallery-trash-hover.png");	
+}
+
+.gallery-editors.notHomeOrTrash .gallery-button.disabled,
+button.disabled
+{
+	cursor: default;
+	opacity: 0.3;
+	-webkit-transition: opacity 0.1s linear;
+	transition: opacity 0.1s linear;		
+}
+
+button#empty-trash {
+	float: right;
+	margin-top: 10px;
+}
+
+/* gallery */
+.gallery {
+	margin: 20px 0 60px 0px;
+	overflow: hidden;
+}
+
+.gallery .header {
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-right: 18px;
+	max-width: 900px;
+}
+
+.gallery .header h3 {
+	font-size: 32px;
+	font-weight: 300;
+	margin-bottom: 20px;
+	height: 50px;
+	display: inline-block;
+}
+
+.gallery .inputs {
+	float: left;
+	width: 100%;
+	max-width: 540px;	
+	margin-right: 15px;
+}
+
+.gallery .gallery-edit-panel {
+	float: left;
+	width: 210px;
+	overflow: visible;
+}
+
+.gallery .header .gallery-visibility {
+	margin-bottom: 10px;
+	padding: 20px;
+	height: 80px;
+	min-width: 190px;
+}
+
+.gallery .header .gallery-visibility label {
+	display: block;
+	margin-bottom: 10px;
+	vertical-align: baseline;
+	float: left;
+}
+
+.gallery .header .gallery-visibility input {
+	vertical-align: baseline;
+	margin-right: 5px;
+	float: left;	
+}
+
+.label-box {
+	overflow: hidden;
+}
+
+.gallery .header .visibility {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.gallery .header .gallery-edit-panel input[type="radio"] {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+/* borders */
+.editor-control {
+	background-color: #fdfdfd;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;	
+}
+
+.gallery .header input[type="text"],
+.gallery .header textarea 
+{ 
+	width: 100%;
+	padding: 7px;
+}
+
+.gallery .header .title,
+#image-editor #editor-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.gallery .header .description,
+#image-editor #editor-description {
+	display: block;
+	resize: none; 	
+}
+
+.gallery .header .description {
+	margin-bottom:10px;	
+	height: 117px;	
+}
+
+.gallery .header button.gallery-save {
+	background-color: #e3e3e3; /* default to off */
+}
+
+.gallery .header.editing {
+	background-color: #fff;
+	width: 520px;
+	padding-left: 20px;
+}
+
+.gallery .images {
+	margin: 0 0 0 50px;	
+	min-width: 20px !important;
+	min-height: 50px;
+	overflow: hidden;
+}
+
+.gallery .upload {
+	clear: both;
+	display: block;
+	margin: 0 0 50px 50px;
+}
+
+.gallery .img-container,
+.sortable-placeholder
+{
+	border: 2px solid #d5d5d5;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	cursor: move;	
+}
+
+.gallery .img-container .title {
+	position: absolute;
+	top: 20px;	/* overriden by jQuery to get correct top */
+	width: 100%;
+	background-color: #fff;
+	opacity: 0.8;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;	
+	display: none;
+}
+
+.gallery .img-container .isHidden {
+	position: absolute;
+	left: 7px;
+	bottom: 3px;
+}
+
+.gallery .img-container .edit {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 38px;
+	width: 38px;
+	opacity: 0.8;
+	background-color: #fff;	
+	background-image: url("images/cog.png");	
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: none;
+	cursor: pointer;
+}
+
+.gallery .img-container .trash {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	width: 17px;
+	height: 20px;
+	background-image: url("images/trash-black.png");	
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: none;
+	cursor: pointer;
+}
+
+.gallery .img-container.uploading {
+	cursor: inherit;
+	text-align: center;
+	display: table;
+}
+
+.gallery .img-container.uploading .inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.gallery.homepage h3 {
+	color: #5e5e5e;	
+}
+
+.gallery.trash {
+	margin-top: 100px;
+	padding-top: 30px;
+	border-top: 2px solid #e3e3e3;
+	display: none !important; /* Hide for now */
+}
+
+.gallery.trash .images {
+	opacity: 0.5;
+}
+
+.gallery.trash .img-container:hover {
+	opacity: 1;
+}
+
+.gallery.draggable {
+}
+
+.sortable-placeholder {
+	border: 1px dotted #b7b7b7;
+	overflow: hidden;	
+}
+
+.gallery .plupload-upload {
+}
+
+/* editing */
+.gallery .img-container.editing {
+	border-color: #2b2b2b;
+}
+
+.gallery .img-container.editing .title {
+	opacity: 1;
+}
+
+.gallery .img-container.editing img {
+	opacity: 0.6;
+}
+
+.gallery .img-container.editing .edit {
+	background-color: #000;		
+	background-image: url("images/cog-white.png");		
+}
+
+.gallery .img-container.editing .trash {
+	display: block;
+}
+
+.gallery .img-container.editing .trash:hover {
+	background-image: url("images/trash-red.png");
+}
+
+.editing  input,
+.editing  textarea
+{
+	padding: 2px;
+	line-height: 100%;
+}
+
+/* from elsewhere */
+.filelist {
+    width: 60%;
+}
+.filelist .file {
+    padding: 5px;
+    background: #ececec;
+    border: solid 1px #ccc;
+    margin-bottom: 4px;
+}
+.filelist .fileprogress {
+    width: 0%;
+    background: #B7C53D;
+    height: 5px;
+}
+.plupload-thumbs {
+ 
+}
+.plupload-thumbs .thumb {
+    width: 50px;
+    padding-right: 5px;
+    float: left;
+}
+.plupload-thumbs .thumb img {
+    width: 50px;
+    height: 50px;
+}
+.ui-sortable  .thumb img {
+    cursor: pointer;
+}
+
+/* -- jQuery UI Dialogs -- */
+/* Override jQuery UI */
+.ui-widget-overlay {
+	background: #000000 50% 50% repeat-x !important;
+	opacity: 0.8 !important;
+	filter: Alpha(Opacity=80) !important;
+	position: fixed;
+	z-index: 30;
+}
+.ui-widget-content {
+	border-color: #e3e3e3 !important;
+	z-index: 31;
+}
+
+.ui-button-text-only .ui-button-text {
+	padding: 0 !important;
+}
+
+/* custom bits */
+.ui-dialog.no-titlebar .ui-dialog-titlebar {
+	display: none;
+}
+
+/* Image Editor */
+#image-editor-overlay {
+	height:100%;
+	width:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index:100 !important;		
+	display: none;
+}
+
+#image-editor {
+	position: absolute;
+	background-color: #fff;
+	width: 500px;
+	height: 608px;
+}
+
+#image-editor #close-button {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-image: url("images/editor-close.gif");	
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+#image-editor #prev-button {
+	position: absolute;
+	width: 33px;
+	height: 30px;
+	background-image: url("images/editor-button-left-off.png");	
+	top: 314px;
+	right: 40px;
+	cursor: pointer;
+}
+#image-editor #prev-button.enabled:hover {
+	background-image: url("images/editor-button-left-on.png");
+}
+
+#image-editor #next-button {
+	position: absolute;
+	width: 33px;
+	height: 30px;
+	background-image: url("images/editor-button-right-off.png");
+	top: 314px;
+	right: 5px;
+	cursor: pointer;
+}
+#image-editor #next-button.enabled:hover {
+	background-image: url("images/editor-button-right-on.png");
+}
+
+#image-editor #next-button.disabled,
+#image-editor #prev-button.disabled {
+	opacity: 0.3;
+	cursor: default;
+}
+
+#image-editor #editor-image-bg { 
+	width: 500px;
+	height: 350px;	
+	background-image: url("images/status_icon.gif");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#image-editor #editor-image { 
+}
+
+#image-editor #editor-title {
+	position: absolute;
+	top: 380px;
+	left: 38px;
+	width: 420px;
+	padding: 7px;
+	line-height: 24px;
+}
+
+#image-editor #editor-description {
+	position: absolute;
+	top: 436px;
+	left: 38px;
+	width: 420px;
+	padding: 7px;	
+	height: 100px;
+}
+
+#image-editor #editor-status-holder {
+	position: absolute;
+	top: 562px;
+	right: 40px;	
+}
+
+#image-editor #editor-status-holder img {
+	float: left;
+	margin-right: 10px;
+}
+
+#image-editor #editor-status {
+	margin-top: 3px;
+	margin-right: 5px;
+}
+
+#image-editor button#editor-save {
+	position: absolute;
+	top: 553px;
+	left: 38px;
+}
+
+#image-editor button#editor-delete {
+	position: absolute;
+	top: 553px;
+	left: 108px;
+}
+
+
+body.options_page_ac_gallery_manager.editing-image {
+	overflow: hidden;
+}
+
+/* Alert */
+.information {
+	padding: 10px 12px;
+	margin: 0 0 1.5em;
+	line-height: 1.6em;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;	
+	
+	background-color: #f8ebd6;
+	border: 1px solid #f6ca85;
+	color: #f39c12;
+}
+
+.touch-only {
+	margin-top: 30px !important;
+	max-width: 600px;
+	margin: 0 auto;	
+	margin-left: 50px;
+}
+
+
+/* Responsive */
+/* WP reduces the side menu bar at 900px */
+@media only screen and (max-width: 900px) {
+
+	#wpcontent {
+		margin-left: 25px !important;
+	}
+  	
+}

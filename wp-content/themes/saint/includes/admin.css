@@ -1,0 +1,256 @@
+/********************/
+/**** ADMIN CSS  ****//********************/
+/* - META BOXES
+------------------------------- */
+#ac_sidebar .sidebar_layout .rwmb-image-select {
+  width: 53px;
+  height: 44px;
+  padding: 0;
+}
+/* hide page title for posts */
+.post-type-post .ac-page-title {
+  display: none;
+}
+/* - REDUX OVERRIDES 
+------------------------------- */
+.appearance_page_Saint_options {
+  /* Redux Header */
+
+}
+.appearance_page_Saint_options #wpcontent,
+.appearance_page_Saint_options #wpfooter,
+.appearance_page_Saint_options #wpwrap {
+  background: #999;
+}
+.appearance_page_Saint_options #wpcontent #adminmenuback,
+.appearance_page_Saint_options #wpfooter #adminmenuback,
+.appearance_page_Saint_options #wpwrap #adminmenuback,
+.appearance_page_Saint_options #wpcontent #adminmenuwrap,
+.appearance_page_Saint_options #wpfooter #adminmenuwrap,
+.appearance_page_Saint_options #wpwrap #adminmenuwrap {
+  z-index: 1;
+}
+.appearance_page_Saint_options .redux-container {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #eee;
+  background-image: none;
+  border: 1px solid #777;
+  /* Info bar */
+
+  /* Redux Header */
+
+  /* Redux Main */
+
+}
+.appearance_page_Saint_options .redux-container #redux-header {
+  background: #252525;
+  border-color: #252525;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 10px;
+}
+.appearance_page_Saint_options .redux-container #redux-header .display_header {
+  margin: 20px 30px;
+}
+.appearance_page_Saint_options .redux-container #redux-header .display_header h2 {
+  color: #fff;
+  font-size: 28px;
+}
+.appearance_page_Saint_options .redux-container #redux-sticky #info_bar {
+  background: #555;
+  border-color: #555;
+  padding: 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.appearance_page_Saint_options .redux-container #redux-sticky #redux-save,
+.appearance_page_Saint_options .redux-container #redux-sticky #redux-save-warn {
+  padding: 12px 35px 12px 14px;
+  text-align: center;
+}
+.appearance_page_Saint_options .redux-container #redux-sidebar #redux-group-menu li.active a {
+  background: #fff;
+  border-top-color: #ddd;
+  border-bottom-color: #ddd;
+  color: #999;
+}
+.appearance_page_Saint_options .redux-container .redux-main {
+  background: #fff;
+}
+.appearance_page_Saint_options .redux-container .redux-main .redux-group-tab.ac-7_section_group .form-table tr th {
+  padding-right: 20px;
+}
+.appearance_page_Saint_options .redux-container .redux-main .redux-group-tab h3 {
+  font-size: 1.4em;
+  margin: 10px 0 30px 0;
+  padding-bottom: 5px;
+}
+.appearance_page_Saint_options .redux-container .redux-main .redux-group-tab .form-table tr th {
+  padding-right: 12%;
+  width: 40%;
+}
+.appearance_page_Saint_options .redux-container .redux-main .redux-group-tab .form-table tr th .field-desc {
+  color: #777;
+  font-weight: normal;
+}
+.appearance_page_Saint_options .redux-container .redux-main .showDefaults {
+  display: none;
+}
+.appearance_page_Saint_options .redux-container .redux-main .redux-container-switch .ac_double_colour_switch .cb-disable.selected {
+  background-position: 0 -60px;
+}
+.appearance_page_Saint_options .redux-container .redux-main .redux-container-switch .ac_double_colour_switch .cb-disable.selected span {
+  background-position: right -240px;
+  color: #fff;
+}
+.appearance_page_Saint_options .redux-container #redux-footer {
+  padding: 14px;
+  right: 0;
+}
+.appearance_page_Saint_options .redux-container .ui-buttonset .ui-state-active {
+  background-color: #0088BE;
+  background-repeat: repeat-x;
+  background-image: none;
+  border-color: #0064cd #0064cd #003f81;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.75);
+}
+.appearance_page_Saint_options .redux-container .ui-buttonset .ui-state-active.ui-state-hover {
+  background: #007bac;
+}
+.appearance_page_Saint_options .redux-container .ui-button {
+  background-color: #fff;
+  background-image: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  border: 1px solid #ddd;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.appearance_page_Saint_options .redux-container .ui-button.ui-state-hover {
+  background-color: #f4f4f4;
+}
+.appearance_page_Saint_options .redux-container .ui-slider .ui-slider-range {
+  position: absolute;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+  color: #ffffff;
+  background-color: #0088BE;
+  background-repeat: repeat-x;
+  background-image: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #dadada;
+}
+.appearance_page_Saint_options .redux-container .ui-slider .ui-slider-handle {
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 120%;
+  background-image: none !important;
+  cursor: pointer;
+}
+.appearance_page_Saint_options .redux-container .ui-widget-content {
+  border: 1px solid #dadada;
+}
+.appearance_page_Saint_options .redux-container .select2-container .select2-choice {
+  background-image: none;
+}
+.appearance_page_Saint_options .redux-container .select2-container .select2-choice .select2-arrow {
+  background-image: none;
+}
+.ui-state-highlight {
+  height: 2.5em;
+  line-height: 2.2em;
+}
+/* override wp-engine icon large */
+#redux-group-menu .icon-large {
+  background-image: none !important;
+}
+/* - THEME ACTIVATION
+------------------------------- */
+.ac-setup-options {
+  margin: 40px 0 40px 0;
+}
+.ac-setup-options .ac-setup-option {
+  float: left;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+.ac-setup-options .ac-setup-option:last-child {
+  margin-right: 0px;
+}
+.ac-setup-options .ac-setup-option p {
+  padding: 0 10px 10px 10px;
+}
+.online-documenation {
+  float: left;
+  margin: 37px 80px 0;
+}
+.online-documenation a {
+  text-decoration: none;
+}
+.dd-plugin-check {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.dd-plugin-check td {
+  width: 50%;
+  padding: inherit !important;
+}
+.dd-plugin-check td:nth-child(1) {
+  text-align: right;
+}
+.dd-plugin-check td:nth-child(2) {
+  text-align: left;
+}
+.dd-plugin-check .installed {
+  color: green;
+}
+.dd-plugin-check .not-installed {
+  color: red;
+}
+.demo-data-file-missing {
+  color: red;
+}
+.demo-data-missing-files p {
+  margin: 0.3em;
+}
+/* - WORDPRESS
+------------------------------- */
+.column-thumbnail {
+  width: 120px;
+}
+.column-thumbnail img.attachment-thumbnail {
+  max-height: 100px;
+  max-width: 100px;
+}
+.ac-multi-line-button {
+  white-space: inherit !important;
+  line-height: 150% !important;
+  height: auto !important;
+}
+/* - REV SLIDER
+------------------------------- */
+/* hide update nag */
+.rs-update-notice-wrap {
+  display: none;
+}
+/* - VISUAL COMPOSER
+------------------------------- */
+.ult_activate {
+  display: none;
+}
+/* - VISUAL COMPOSER ULTIMATE ADDONS
+------------------------------- */
+#toplevel_page_bsf-dashboard {
+  display: none;
+}
